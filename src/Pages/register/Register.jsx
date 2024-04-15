@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 
 
 const Register = () => {
-    const { register } = useContext(CreateContext);
+    const { register, upProfile } = useContext(CreateContext);
     const [showPassword, setShowPassword] = useState(false);
 
     // Form submit
@@ -18,26 +18,32 @@ const Register = () => {
         const form = new FormData(e.currentTarget);
         const email = form.get('email');
         const password = form.get('password');
+        const name = form.get('name');
+        const photoUrl = form.get('photoUrl')
 
-        if(password.length < 6){
+        if (password.length < 6) {
             return toast.error("Please enter a 6 digit password");;
         }
-        if(!/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password)){
+        if (!/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password)) {
             return toast.error('Please, enter password with special characters');
         }
-        if(!/[A-Z]/.test(password)){
+        if (!/[A-Z]/.test(password)) {
             return toast.error('Enter Password with a capital letters');
         }
-        if(!/[a-z]/.test(password)){
+        if (!/[a-z]/.test(password)) {
             return toast.error('Enter Lower Case Password');
         }
 
         // login import in authProvider
         register(email, password)
-            .then(() => {
+            .then((res) => {
+                // Update
+                upProfile(name, photoUrl)
                 toast.success('SuccessFull Register, Welcome to E.O.O');
+                console.log(res);
             })
-            .catch(error => {
+            .catch((e) => {
+                console.log(e);
                 toast.warning("Already Register this Email, You can Login");
             })
     }
@@ -46,7 +52,7 @@ const Register = () => {
 
     return (
         <div className="lg:bg-none bg-[url('https://i.ibb.co/YpqRm53/photo-1479839672679-a46483c0e7c8.jpg')]    bg-cover bg-center relative">
-            <div class="absolute w-full h-full lg:w-0 bg-black lg:bg-none opacity-50 z-0"></div>
+            <div className="absolute w-full h-full lg:w-0 bg-black lg:bg-none opacity-50 z-0"></div>
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center container mx-auto gap-9 lg:mt-7 p-5">
                 <div className="z-10 p-6">
                     <div>
