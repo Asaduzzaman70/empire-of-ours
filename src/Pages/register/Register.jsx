@@ -111,7 +111,8 @@ const Register = () => {
                         <p className="roboto font-bold">You have an account. Please <NavLink className='underline text-[#8D99FF]' to='/login'>Login Now</NavLink></p>
                     </div>
                 </div>
-                <div className="lg:bg-[url('https://i.ibb.co/YpqRm53/photo-1479839672679-a46483c0e7c8.jpg')] h-full w-full bg-cover bg-center rounded-lg">
+                <div className="lg:bg-[url('https://i.ibb.co/YpqRm53/photo-1479839672679-a46483c0e7c8.jpg')] 
+                h-full w-full bg-cover bg-center rounded-lg border-r-8 border-[#8D99FF] shadow-2xl shadow-slate-500">
                     {/* Empty Object */}
                 </div>
             </div>
