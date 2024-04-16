@@ -1,15 +1,39 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaGithub, FaGoogle, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import 'react-toastify/dist/ReactToastify.css';
+import { CreateContext } from "../../Provider/AuthProvider";
 
 
 
 const LogIn = () => {
+    const { logIn, logInWithMedia } = useContext(CreateContext)
     const [showPassword, setShowPassword] = useState(false);
 
     // Login form on Submit
-    const handleLogin = () => {
+    const handleLogin = e => {
+        e.preventDefault();
+        const form = new FormData(e.currentTarget);
+        const email = form.get("email");
+        const password = form.get("password")
 
+        logIn(email, password)
+            .then(() => {
+                alert('Successful log in');
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+
+    // Media login 
+    const handleMedia = (arg) => {
+        logInWithMedia(arg)
+            .then(() => {
+                alert('Success full log in');
+            })
+            .error(error => {
+                alert(error.message);
+            })
     }
 
 
@@ -60,7 +84,7 @@ const LogIn = () => {
                             </div>
                         </form>
                         <div className="space-x-8 mt-24">
-                            <button className="
+                            <button onClick={() => handleMedia('google')} className="
                             btn 
                             bg-transparent 
                             border-2
@@ -70,7 +94,7 @@ const LogIn = () => {
                             hover:bg-[#8d98ff27] hover:border-[#8D99FF] hover:text-[#8d98ff]">
                                 <FaGoogle />
                             </button>
-                            <button className="
+                            <button onClick={() => handleMedia('gitHub')} className="
                             btn 
                             bg-transparent 
                             border-2
