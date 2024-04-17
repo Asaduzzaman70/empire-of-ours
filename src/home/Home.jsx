@@ -1,4 +1,5 @@
 import Banner from "../Pages/banner/Banner";
+import CardSection from "../Pages/cardSection/CardSection";
 import PropertyNumber from "../Pages/propertyNumber/PropertyNumber";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <PropertyNumber></PropertyNumber>
+            <CardSection></CardSection>
         </div>
     );
 };
