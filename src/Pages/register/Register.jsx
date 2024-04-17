@@ -51,7 +51,7 @@ const Register = () => {
 
 
     return (
-        <div className="lg:bg-none bg-[url('https://i.ibb.co/YpqRm53/photo-1479839672679-a46483c0e7c8.jpg')]    bg-cover bg-center relative">
+        <div className="lg:bg-none bg-[url('https://i.ibb.co/YpqRm53/photo-1479839672679-a46483c0e7c8.jpg')] bg-cover bg-center relative lg:mb-10">
             <div className="absolute w-full h-full lg:w-0 bg-black lg:bg-none opacity-50 z-0"></div>
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center container mx-auto gap-9 lg:mt-7 p-5">
                 <div className="z-10 p-6">

@@ -2,6 +2,8 @@ import { useContext, useState } from "react";
 import { FaGithub, FaGoogle, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import 'react-toastify/dist/ReactToastify.css';
 import { CreateContext } from "../../Provider/AuthProvider";
+import { NavLink } from "react-router-dom";
+import { toast } from "react-toastify";
 
 
 
@@ -14,13 +16,20 @@ const LogIn = () => {
         e.preventDefault();
         const form = new FormData(e.currentTarget);
         const email = form.get("email");
-        const password = form.get("password")
+        const password = form.get("password");
+        if(password.length < 6){
+            return toast.error('Your Password must 6 character or more!')
+        }
+        if(!/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/.test(password)){
+            return toast.error('One special character please!')
+        }
 
         logIn(email, password)
             .then(() => {
-                alert('Successful log in');
+                toast.success('Successful login');
             })
             .catch(error => {
+                toast.error('Something Wrong!')
                 console.log(error);
             })
     }
@@ -29,7 +38,7 @@ const LogIn = () => {
     const handleMedia = (arg) => {
         logInWithMedia(arg)
             .then(() => {
-                alert('Success full log in');
+                toast.success('Successful login');
             })
             .error(error => {
                 alert(error.message);
@@ -40,7 +49,7 @@ const LogIn = () => {
     return (
         <div className="hero min-h-screen" style={{ backgroundImage: "url('https://i.ibb.co/GHXgFHZ/photo-1448630360428-65456885c650.jpg')" }}>
             <div className="hero-overlay bg-opacity-60"></div>
-            <div className="hero-content text-center text-neutral-content">
+            <div className="hero-content text-center text-neutral-content py-10">
                 <div className="max-w-2xl bg-gray-600 rounded-md bg-opacity-25 shadow-2xl shadow-black p-11 border-2 border-[#8d98ff4d]">
                     <h1 className="mb-5 text-5xl font-semibold rajdhani text-white">Welcome Back to Empire Of Ours</h1>
                     <p className="mb-5 roboto text-lg text-gray-300">
@@ -104,6 +113,9 @@ const LogIn = () => {
                             hover:bg-[#8d98ff27] hover:border-[#8D99FF] hover:text-[#8d98ff]">
                                 <FaGithub />
                             </button>
+                        </div>
+                        <div className="text-center mt-6">
+                            <p className="roboto font-bold">You don't have an account. Please <NavLink className='underline text-[#8D99FF]' to='/register'>Register Now</NavLink></p>
                         </div>
                     </div>
                 </div>
