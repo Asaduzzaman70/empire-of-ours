@@ -1,5 +1,5 @@
 # React + Vite
-#BulletPoint:-
+# BulletPoint:-
     1. Diverse Property Portfolio: Our website offers a diverse portfolio of real estate options, ranging from sleek urban apartments to expansive countryside estates, catering to various preferences and lifestyles.
 
     2. User-Friendly Interface: With a streamlined and intuitive interface, navigating through property listings, filtering options, and accessing essential information becomes effortless, ensuring a smooth user experience.
@@ -10,7 +10,7 @@
 
     5. Community Engagement: Beyond transactions, our website fosters a sense of community by providing valuable resources, neighborhood guides, and forums where users can share insights, experiences, and connect with like-minded individuals, creating a vibrant real estate community ecosystem.
 
-#NPM package name:
+# NPM package name:
     1."ANIMATE.CSS"
     2."FIREBASE"
     3."LOCALFORAGE"
