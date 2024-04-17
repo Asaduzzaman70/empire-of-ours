@@ -32,7 +32,7 @@ const Navbar = () => {
                             {listItem}
                         </ul>
                     </div>
-                    <a className="text-xl">Empire Of Ours</a>
+                    <a className="text-xl rajdhani font-extrabold">Empire <span className="text-[#8D99FF]">Of Ours</span></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

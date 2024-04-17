@@ -12,6 +12,7 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     // loader
     const [loader, setLoader] = useState(true);
+
     const [loadPropertyData, setLoadPropertyData] = useState([]);
     // slider data
     const [sliderData, setSliderData] = useState([]);
@@ -29,10 +30,10 @@ const AuthProvider = ({ children }) => {
         setLoader(true);
         try {
             await updateUserProfile(auth.currentUser, { displayName: name, photoURL: photoUrl });
-            setLoader(false);
+            setLoader(true);
             console.log("Profile updated successfully.");
         } catch (error) {
-            setLoader(false);
+            setLoader(true);
             console.error("Error updating profile:", error);
         }
     };
@@ -62,32 +63,37 @@ const AuthProvider = ({ children }) => {
         return signOut(auth);
     }
 
-    // Get User information
-    useEffect(() => {
-        onAuthStateChanged(auth, (data) => {
-            setUser(data);
-            console.log(data);
-        })
-    }, [])
 
     // Fetch Slider data
     useEffect(() => {
-        setLoader(true);
-        fetch('https://api.jsonbin.io/v3/b/661f6540ad19ca34f85b4e5d')
-            .then(res => res.json())
-            .then(data => setSliderData(data.record))
-    }, [])
+        const fetchSliderData = async () => {
+            try {
+                const response = await fetch('https://api.jsonbin.io/v3/b/661f6540ad19ca34f85b4e5d');
+                const data = await response.json();
+                setSliderData(data.record);
+            } catch (error) {
+                console.error('Error fetching slider data:', error);
+            }
+        };
 
-    // Load Property Data from JSON Bin
+        fetchSliderData();
+    }, []);
+
+
+    // Get User information
     useEffect(() => {
-        setLoader(true);
-        fetch('https://api.jsonbin.io/v3/b/661f5a1fe41b4d34e4e595e0')
-            .then(res => res.json())
-            .then(data => setLoadPropertyData(data.record))
-    }, [])
+        const unSubscribe = onAuthStateChanged(auth, currentUser => {
+            setUser(currentUser);
+            setLoader(false); // Set loader to false after authentication state is determined
+        });
+        return () => {
+            unSubscribe();
+        }
+    }, []);
 
 
     const authInfo = {
+        setLoader,
         user,
         loadPropertyData,
         sliderData,
@@ -95,8 +101,10 @@ const AuthProvider = ({ children }) => {
         logIn,
         logInWithMedia,
         upProfile,
-        logOut
+        logOut,
+        loader
     }
+
     return (
         <CreateContext.Provider value={authInfo}>
             {children}

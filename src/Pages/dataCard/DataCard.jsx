@@ -4,7 +4,7 @@ import 'animate.css';
 
 
 const DataCard = ({ property }) => {
-    const { image, title, price, description, area } = property;
+    const { image, title, price, description, area, id } = property;
 
     return (
         <div>
@@ -20,7 +20,7 @@ const DataCard = ({ property }) => {
                     <p>{area}<sup>2</sup></p>
                 </div>
                 <div className="mt-6">
-                    <NavLink to='/details'><button className="btn bg-[#7c89fc] roboto">View Property</button></NavLink>
+                    <NavLink to={`/details/${id}`}><button className="btn bg-[#7c89fc] roboto">View Property</button></NavLink>
                 </div>
             </div>
         </div>

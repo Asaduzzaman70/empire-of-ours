@@ -4,6 +4,8 @@ import ErrorPage from "./ErrorPage";
 import LogIn from "../Pages/logIn/LogIn";
 import Register from "../Pages/register/Register";
 import Home from "../home/Home";
+import CardDetails from "../Pages/cardDetails/CardDetails";
+import PrivateRoute from "./PrivateRouter";
 
 const router = createBrowserRouter([
     {
@@ -13,7 +15,8 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Home/>
+                element: <Home/>,
+                loader: () => fetch('/propertyData.json'),
             },
             {
                 path: '/register',
@@ -22,6 +25,11 @@ const router = createBrowserRouter([
             {
                 path: '/login',
                 element: <LogIn/>
+            },
+            {
+                path: '/details/:id',
+                element: <PrivateRoute><CardDetails/></PrivateRoute>,
+                loader: () => fetch('/propertyData.json'),
             }
         ]
     }

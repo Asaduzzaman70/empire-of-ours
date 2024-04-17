@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { FaGithub, FaGoogle, FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import 'react-toastify/dist/ReactToastify.css';
 import { CreateContext } from "../../Provider/AuthProvider";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 
@@ -10,6 +10,9 @@ import { toast } from "react-toastify";
 const LogIn = () => {
     const { logIn, logInWithMedia } = useContext(CreateContext)
     const [showPassword, setShowPassword] = useState(false);
+
+    const location = useLocation();
+    const navigate = useNavigate();
 
     // Login form on Submit
     const handleLogin = e => {
@@ -27,6 +30,8 @@ const LogIn = () => {
         logIn(email, password)
             .then(() => {
                 toast.success('Successful login');
+
+                navigate(location?.state ? location.state : '/');
             })
             .catch(error => {
                 toast.error('Something Wrong!')

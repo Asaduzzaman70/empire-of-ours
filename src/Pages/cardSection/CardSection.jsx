@@ -1,11 +1,11 @@
-import { useContext } from "react";
-import { CreateContext } from "../../Provider/AuthProvider";
+import { useLoaderData } from "react-router-dom";
 import DataCard from "../dataCard/DataCard";
 import 'animate.css';
 
 
 const CardSection = () => {
-    const { loadPropertyData } = useContext(CreateContext);
+    const loadPropertyData = useLoaderData();
+
 
     return (
         <div className="bg-gray-100 py-28 container mx-auto">

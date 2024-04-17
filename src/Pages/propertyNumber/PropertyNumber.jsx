@@ -1,9 +1,9 @@
 import 'animate.css';
-import { useContext } from 'react';
-import { CreateContext } from '../../Provider/AuthProvider';
+import { useLoaderData } from 'react-router-dom';
 
 const PropertyNumber = () => {
-    const { loadPropertyData } = useContext(CreateContext);
+    const loadPropertyData = useLoaderData();
+
 
     // Data Filter Function
     const dataFilter = (arg) => {
