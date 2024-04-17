@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -13,14 +13,22 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 const Banner = () => {
-    
+    const [sliderData, setSliderData] = useState([]);
+
+    // Fetch Slider data
+    useEffect(() => {
+        fetch('https://api.jsonbin.io/v3/b/661f6540ad19ca34f85b4e5d')
+            .then(res => res.json())
+            .then(data => setSliderData(data.record))
+    }, [])
+
     return (
         <div>
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
-                    delay: 2500,
+                    delay: 9000,
                     disableOnInteraction: false,
                 }}
                 pagination={{
@@ -30,10 +38,19 @@ const Banner = () => {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="h-screen"
             >
-                <SwiperSlide><div className='text-center text-white bg-no-repeat bg-cover h-full' style={{ backgroundImage: "url('https://i.ibb.co/GHXgFHZ/photo-1448630360428-65456885c650.jpg')" }}>fffffffff</div></SwiperSlide>
-                <SwiperSlide className='text-center'>Slide 2</SwiperSlide>
-                <SwiperSlide className='text-center'>Slide 3</SwiperSlide>
-                <SwiperSlide className='text-center'>Slide 4</SwiperSlide>
+                {
+                    sliderData.map(slide => (
+                        <SwiperSlide key={slide.id} className='h-full w-full relative'>
+                            <div className="bg-no-repeat bg-bottom bg-cover h-full w-full" style={{ backgroundImage: `url('${slide.imageURL}')` }}>
+                                <div className="h-full w-full bg-black bg-opacity-60 absolute bottom-0 left-0"></div>
+                                <div className='absolute top-1/3 w-full h-full text-center p-4'>
+                                    <h2 className="text-6xl lg:text-8xl text-white rajdhani font-normal">{slide.title}</h2>
+                                    <p className="text-gray-300 text-xl lg:text-3xl roboto lg:px-40 font-extralight">{slide.description}</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    ))
+                }
             </Swiper>
         </div>
     );
