@@ -10,7 +10,12 @@ export const CreateContext = createContext(null)
 
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
+    // loader
     const [loader, setLoader] = useState(true);
+    const [loadPropertyData, setLoadPropertyData] = useState([]);
+    // slider data
+    const [sliderData, setSliderData] = useState([]);
+
 
 
     // register
@@ -45,7 +50,7 @@ const AuthProvider = ({ children }) => {
             setLoader(true);
             return signInWithPopup(auth, googleProvider);
         }
-        else if (arg == 'gitHub') { 
+        else if (arg == 'gitHub') {
             const gitHubProvider = new GithubAuthProvider();
             setLoader(true);
             return signInWithPopup(auth, gitHubProvider);
@@ -65,9 +70,27 @@ const AuthProvider = ({ children }) => {
         })
     }, [])
 
+    // Fetch Slider data
+    useEffect(() => {
+        setLoader(true);
+        fetch('https://api.jsonbin.io/v3/b/661f6540ad19ca34f85b4e5d')
+            .then(res => res.json())
+            .then(data => setSliderData(data.record))
+    }, [])
+
+    // Load Property Data from JSON Bin
+    useEffect(() => {
+        setLoader(true);
+        fetch('https://api.jsonbin.io/v3/b/661f5a1fe41b4d34e4e595e0')
+            .then(res => res.json())
+            .then(data => setLoadPropertyData(data.record))
+    }, [])
+
 
     const authInfo = {
         user,
+        loadPropertyData,
+        sliderData,
         register,
         logIn,
         logInWithMedia,

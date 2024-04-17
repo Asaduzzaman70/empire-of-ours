@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -10,17 +10,12 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { CreateContext } from '../../Provider/AuthProvider';
 
 
 const Banner = () => {
-    const [sliderData, setSliderData] = useState([]);
+    const { sliderData } = useContext(CreateContext)
 
-    // Fetch Slider data
-    useEffect(() => {
-        fetch('https://api.jsonbin.io/v3/b/661f6540ad19ca34f85b4e5d')
-            .then(res => res.json())
-            .then(data => setSliderData(data.record))
-    }, [])
 
     return (
         <div>
