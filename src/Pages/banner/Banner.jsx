@@ -13,6 +13,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 
 const Banner = () => {
+    
     return (
         <div>
             <Swiper

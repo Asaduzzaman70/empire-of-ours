@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "imageURL": "https://i.ibb.co/v1DttGd/photo-1582407947304-fd86f028f716.jpg",
+        "title": "Prime Office Space",
+        "description": "Discover spacious and modern office spaces in the heart of the city, equipped with state-of-the-art amenities to elevate your business."
+    },
+    {
+        "id": 2,
+        "imageURL": "https://i.ibb.co/DzTwcs7/photo-1580587771525-78b9dba3b914.jpg",
+        "title": "Luxury Retail Spaces",
+        "description": "Explore upscale retail spaces designed to captivate customers and elevate your brand presence. Your success starts here."
+    },
+    {
+        "id": 3,
+        "imageURL": "https://i.ibb.co/mSHMRN8/photo-1486406146926-c627a92ad1ab.jpg",
+        "title": "Industrial Warehouses",
+        "description": "Find expansive industrial warehouses with flexible layouts and strategic locations, ideal for manufacturing and distribution."
+    },
+    {
+        "id": 4,
+        "imageURL": "https://i.ibb.co/GHXgFHZ/photo-1448630360428-65456885c650.jpg",
+        "title": "Investment Opportunities",
+        "description": "Unlock lucrative investment opportunities in commercial real estate. From office buildings to retail centers, seize the moment."
+    },
+    {
+        "id": 5,
+        "imageURL": "https://i.ibb.co/YpqRm53/photo-1479839672679-a46483c0e7c8.jpg",
+        "title": "Flexible Business Spaces",
+        "description": "Discover versatile business spaces tailored to meet your unique requirements. From startups to established enterprises, we've got you covered."
+    },
+    {
+        "id": 6,
+        "imageURL": "https://i.ibb.co/VCvgYKg/Office-Building-5.jpg",
+        "title": "Strategic Location",
+        "description": "Explore properties situated in prime locations with high visibility and accessibility, ensuring maximum exposure and convenience for your business."
+    }
+]
