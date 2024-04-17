@@ -1,0 +1,512 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/09mcGCY/Office-Building.jpg",
+        "title": "Skyline Corporate Tower",
+        "segmentName": "Office Building",
+        "description": "Modern office complex in the heart of the city, offering state-of-the-art amenities and prime location.",
+        "price": 12500000,
+        "status": "sale",
+        "area": "250,000 sq ft",
+        "location": "Downtown, New York City",
+        "facilities": [
+            "Conference Rooms",
+            "Fitness Center",
+            "Cafeteria",
+            "Underground Parking"
+        ]
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/vq1N0rv/Galleria-Shopping-Complex.jpg",
+        "title": "Plaza Shopping Mall",
+        "segmentName": "Retail Space",
+        "description": "Newly renovated shopping mall with anchor stores and diverse retail offerings, located in a high-traffic area.",
+        "price": 8000000,
+        "status": "sale",
+        "area": "150,000 sq ft",
+        "location": "Suburban Area, Los Angeles",
+        "facilities": [
+            "Food Court",
+            "Cinema",
+            "Play Area",
+            "Ample Parking"
+        ]
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/GJ8CVwz/Synergy-Distribution-Center.jpg",
+        "title": "Metro Logistics Center",
+        "segmentName": "Warehouse",
+        "description": "Newly constructed warehouse facility with modern amenities, ideal for distribution and logistics operations.",
+        "price": 75000,
+        "status": "rent",
+        "area": "500,000 sq ft",
+        "location": "Industrial Park, Chicago",
+        "facilities": [
+            "Loading Docks",
+            "High Ceilings",
+            "Security System",
+            "Truck Parking"
+        ]
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/LzTm1Y3/Restaurant.jpg",
+        "title": "The Grill House",
+        "segmentName": "Restaurant",
+        "description": "Established restaurant with a prime location and outdoor seating area, offering a diverse menu and excellent reviews.",
+        "price": 1200000,
+        "status": "sale",
+        "area": "5,000 sq ft",
+        "location": "Downtown, San Francisco",
+        "facilities": [
+            "Outdoor Patio",
+            "Bar Area",
+            "Private Dining Room",
+            "Fully Equipped Kitchen"
+        ]
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/4Khr4Qh/Industrial-Facility-2.jpg",
+        "title": "Apex Industrial Park",
+        "segmentName": "Industrial Facility",
+        "description": "State-of-the-art industrial facility with multiple production lines and ample space for future expansion.",
+        "price": 18000000,
+        "status": "sale",
+        "area": "1,000,000 sq ft",
+        "location": "Industrial Zone, Houston",
+        "facilities": [
+            "High-Voltage Power Supply",
+            "Secure Perimeter",
+            "Rail Access",
+            "Backup Generators"
+        ]
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/TY9YdkJ/Entertainment-Venue.jpg",
+        "title": "The Grand Theater",
+        "segmentName": "Entertainment Venue",
+        "description": "Historic theater renovated with modern amenities, perfect for live performances, concerts, and events.",
+        "price": 5000000,
+        "status": "sale",
+        "area": "60,000 sq ft",
+        "location": "Downtown, Atlanta",
+        "facilities": [
+            "Grand Stage",
+            "VIP Lounge",
+            "Concessions",
+            "Backstage Dressing Rooms"
+        ]
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co/tXrhBPq/Office-Building2.jpg",
+        "title": "Riverside Business Centre",
+        "segmentName": "Office Building",
+        "description": "Prestigious office building with panoramic views of the river, offering flexible lease terms and modern amenities.",
+        "price": 125000,
+        "status": "rent",
+        "area": "200,000 sq ft",
+        "location": "Financial District, London",
+        "facilities": [
+            "Executive Lounge",
+            "Rooftop Garden",
+            "24/7 Security",
+            "On-Site Parking"
+        ]
+    },
+    {
+        "id": 8,
+        "image": "https://i.ibb.co/RS6jcZ3/Retail-Space.jpg",
+        "title": "Galleria Shopping Complex",
+        "segmentName": "Retail Space",
+        "description": "Upscale shopping destination featuring luxury brands, fine dining, and entertainment options.",
+        "price": 15000000,
+        "status": "sale",
+        "area": "300,000 sq ft",
+        "location": "Affluent Neighborhood, Miami",
+        "facilities": [
+            "Valet Parking",
+            "Concierge Services",
+            "Rooftop Dining",
+            "Premium Retail Stores"
+        ]
+    },
+    {
+        "id": 9,
+        "image": "https://i.ibb.co/cN3SnK6/Warehouse-2.jpg",
+        "title": "Synergy Distribution Center",
+        "segmentName": "Warehouse",
+        "description": "Modern distribution center with advanced automation and efficient material handling systems.",
+        "price": 95000,
+        "status": "rent",
+        "area": "750,000 sq ft",
+        "location": "Logistics Park, Dallas",
+        "facilities": [
+            "Automated Sorting Systems",
+            "Cold Storage",
+            "Cross-Docking Capabilities",
+            "On-Site Truck Maintenance"
+        ]
+    },
+    {
+        "id": 10,
+        "image": "https://i.ibb.co/p3bkG9w/Restaurant-2.jpg",
+        "title": "The Rustic Barn",
+        "segmentName": "Restaurant",
+        "description": "Charming farm-to-table restaurant with a rustic ambiance, featuring locally sourced ingredients and a cozy outdoor patio.",
+        "price": 850000,
+        "status": "sale",
+        "area": "4,000 sq ft",
+        "location": "Suburban Area, Seattle",
+        "facilities": [
+            "Outdoor Fireplace",
+            "Private Event Space",
+            "On-Site Herb Garden",
+            "Organic Wine Cellar"
+        ]
+    },
+    {
+        "id": 11,
+        "image": "https://i.ibb.co/8d32XXF/Office-Building-3.jpg",
+        "title": "Parkview Business Plaza",
+        "segmentName": "Office Building",
+        "description": "Eco-friendly office complex with energy-efficient features and a focus on employee wellness.",
+        "price": 10000000,
+        "status": "sale",
+        "area": "180,000 sq ft",
+        "location": "Green Business District, San Diego",
+        "facilities": [
+            "Rooftop Solar Panels",
+            "Fitness Center",
+            "Electric Vehicle Charging Stations",
+            "On-Site Daycare"
+        ]
+    },
+    {
+        "id": 12,
+        "image": "https://i.ibb.co/C6sr1Ss/Restaurant-3.jpg",
+        "title": "The Grill House",
+        "segmentName": "Restaurant",
+        "description": "Established restaurant with a prime location and outdoor seating area, offering a diverse menu and excellent reviews.",
+        "price": 1200000,
+        "status": "sale",
+        "area": "5,000 sq ft",
+        "location": "Downtown, San Francisco",
+        "facilities": [
+            "Outdoor Patio",
+            "Bar Area",
+            "Private Dining Room",
+            "Fully Equipped Kitchen"
+        ]
+    },
+    {
+        "id": 13,
+        "image": "https://i.ibb.co/VCvgYKg/Office-Building-5.jpg",
+        "title": "Titanium Towers",
+        "segmentName": "Office Building",
+        "description": "Iconic twin office towers offering premium office spaces and stunning city views.",
+        "price": 25000000,
+        "status": "sale",
+        "area": "400,000 sq ft",
+        "location": "Central Business District, Singapore",
+        "facilities": [
+            "High-Speed Elevators",
+            "Sky Gardens",
+            "Gourmet Food Court",
+            "Executive Lounge"
+        ]
+    },
+    {
+        "id": 14,
+        "image": "https://i.ibb.co/61QnR1c/Retail-Space-2.jpg",
+        "title": "Grandville Galleria",
+        "segmentName": "Retail Space",
+        "description": "Elegant shopping destination featuring luxury brands, fine dining, and world-class amenities.",
+        "price": 20000000,
+        "status": "sale",
+        "area": "350,000 sq ft",
+        "location": "Upscale Neighborhood, Paris",
+        "facilities": [
+            "Valet Parking",
+            "Personal Shopping Services",
+            "Exclusive Lounges",
+            "Rooftop Terrace"
+        ]
+    },
+    {
+        "id": 15,
+        "image": "https://i.ibb.co/4RpkGHR/Warehouse.jpg",
+        "title": "Nexus Logistics Hub",
+        "segmentName": "Warehouse",
+        "description": "State-of-the-art logistics facility with advanced automation and direct access to major transportation routes.",
+        "price": 110000,
+        "status": "rent",
+        "area": "1,200,000 sq ft",
+        "location": "Logistics Corridor, Dubai",
+        "facilities": [
+            "Automated Sorting Systems",
+            "High-Bay Storage",
+            "Cross-Docking Capabilities",
+            "On-Site Truck Services"
+        ]
+    },
+    {
+        "id": 16,
+        "image": "https://i.ibb.co/pW680rc/Restaurant-4.jpg",
+        "title": "The Coastal Grill",
+        "segmentName": "Restaurant",
+        "description": "Beachfront restaurant offering fresh seafood and stunning ocean views, perfect for casual dining or special occasions.",
+        "price": 1500000,
+        "status": "sale",
+        "area": "6,000 sq ft",
+        "location": "Oceanfront, Malibu",
+        "facilities": [
+            "Outdoor Patio",
+            "Private Dining Room",
+            "Beach Access",
+            "Fully Equipped Kitchen"
+        ]
+    },
+    {
+        "id": 17,
+        "image": "https://i.ibb.co/DGBfzhJ/Industrial-Facility-3.jpg",
+        "title": "Precision Manufacturing Plant",
+        "segmentName": "Industrial Facility",
+        "description": "State-of-the-art manufacturing facility designed for precision engineering and advanced production processes.",
+        "price": 25000000,
+        "status": "sale",
+        "area": "800,000 sq ft",
+        "location": "Industrial Park, Berlin",
+        "facilities": [
+            "Clean Rooms",
+            "Advanced Machinery",
+            "Secure Loading Docks",
+            "On-Site Quality Control Lab"
+        ]
+    },
+    {
+        "id": 18,
+        "image": "https://i.ibb.co/TMQvxYd/Entertainment-Venue-2.jpg",
+        "title": "The Grand Marquee",
+        "segmentName": "Entertainment Venue",
+        "description": "Iconic concert hall renowned for its exceptional acoustics and world-class performances.",
+        "price": 8000000,
+        "status": "sale",
+        "area": "100,000 sq ft",
+        "location": "Cultural District, Vienna",
+        "facilities": [
+            "Grand Concert Hall",
+            "VIP Lounges",
+            "Backstage Dressing Rooms",
+            "Rooftop Event Space"
+        ]
+    },
+    {
+        "id": 19,
+        "image": "https://i.ibb.co/PzGdm0W/Office-Building-4.jpg",
+        "title": "Greenway Business Park",
+        "segmentName": "Office Building",
+        "description": "Eco-friendly office complex featuring sustainable design, lush green spaces, and state-of-the-art amenities.",
+        "price": 150000,
+        "status": "rent",
+        "area": "300,000 sq ft",
+        "location": "Suburban Area, Toronto",
+        "facilities": [
+            "Rooftop Solar Panels",
+            "On-Site Daycare",
+            "Fitness Center",
+            "Electric Vehicle Charging Stations"
+        ]
+    },
+    {
+        "id": 20,
+        "image": "https://i.ibb.co/Fbv9MRj/Retail-Space-3.jpg",
+        "title": "Soho Marketplace",
+        "segmentName": "Retail Space",
+        "description": "Trendy retail destination featuring local boutiques, artisanal shops, and lively street markets.",
+        "price": 6000000,
+        "status": "sale",
+        "area": "80,000 sq ft",
+        "location": "Downtown, New York City",
+        "facilities": [
+            "Pedestrian-Friendly Streets",
+            "Outdoor Seating Areas",
+            "Street Performances",
+            "Artisan Food Stalls"
+        ]
+    },
+    {
+        "id": 21,
+        "image": "https://i.ibb.co/Lgr8D4n/Warehouse-4.jpg",
+        "title": "Apex Distribution Center",
+        "segmentName": "Warehouse",
+        "description": "Modern distribution center with advanced automation, efficient material handling systems, and direct access to major transportation routes.",
+        "price": 85000,
+        "status": "rent",
+        "area": "600,000 sq ft",
+        "location": "Logistics Park, Shanghai",
+        "facilities": [
+            "Automated Sorting Systems",
+            "Cross-Docking Capabilities",
+            "Cold Storage",
+            "On-Site Truck Maintenance"
+        ]
+    },
+    {
+        "id": 22,
+        "image": "https://i.ibb.co/b1tJrPq/Restaurant-6.jpg",
+        "title": "The Urban Bistro",
+        "segmentName": "Restaurant",
+        "description": "Chic urban bistro offering contemporary cuisine and a vibrant atmosphere, perfect for a night out or a business lunch.",
+        "price": 1200000,
+        "status": "sale",
+        "area": "5,000 sq ft",
+        "location": "Downtown, Chicago",
+        "facilities": [
+            "Outdoor Patio",
+            "Private Dining Room",
+            "Bar Area",
+            "Fully Equipped Kitchen"
+        ]
+    },
+    {
+        "id": 23,
+        "image": "https://i.ibb.co/QQPHY2y/Office-Building-7.jpg",
+        "title": "Apex Corporate Centre",
+        "segmentName": "Office Building",
+        "description": "Premium office complex offering state-of-the-art amenities, prime location, and stunning architectural design.",
+        "price": 18000000,
+        "status": "sale",
+        "area": "320,000 sq ft",
+        "location": "Financial District, Sydney",
+        "facilities": [
+            "Rooftop Terrace",
+            "Executive Lounge",
+            "Fitness Center",
+            "Concierge Services"
+        ]
+    },
+    {
+        "id": 24,
+        "image": "https://i.ibb.co/CQYVKLm/Retail-Space-5.jpg",
+        "title": "The Promenade",
+        "segmentName": "Retail Space",
+        "description": "Outdoor lifestyle and entertainment destination featuring al fresco dining, shopping, and family-friendly activities.",
+        "price": 12000000,
+        "status": "sale",
+        "area": "200,000 sq ft",
+        "location": "Suburban Area, Los Angeles",
+        "facilities": [
+            "Outdoor Plazas",
+            "Playground",
+            "Fountain Courtyard",
+            "Ample Parking"
+        ]
+    },
+    {
+        "id": 25,
+        "image": "https://i.ibb.co/1L3s6vt/Warehouse-3.jpg",
+        "title": "Synergy Logistics Park",
+        "segmentName": "Warehouse",
+        "description": "Modern logistics park featuring multiple warehouses with advanced automation and efficient material handling systems.",
+        "price": 150000,
+        "status": "rent",
+        "area": "1,500,000 sq ft",
+        "location": "Logistics Corridor, Atlanta",
+        "facilities": [
+            "Automated Sorting Systems",
+            "Cross-Docking Capabilities",
+            "High-Bay Storage",
+            "On-Site Truck Services"
+        ]
+    },
+    {
+        "id": 26,
+        "image": "https://i.ibb.co/kgpYsHm/Restaurant-5.jpg",
+        "title": "The Rooftop Grill",
+        "segmentName": "Restaurant",
+        "description": "Sophisticated rooftop restaurant offering panoramic city views, innovative cuisine, and a chic ambiance.",
+        "price": 2000000,
+        "status": "sale",
+        "area": "8,000 sq ft",
+        "location": "Downtown, Tokyo",
+        "facilities": [
+            "Rooftop Dining Area",
+            "Open Kitchen",
+            "Bar Lounge",
+            "Private Dining Rooms"
+        ]
+    },
+    {
+        "id": 27,
+        "image": "https://i.ibb.co/vY4QFKf/Industrial-Facility.jpg",
+        "title": "Precision Engineering Complex",
+        "segmentName": "Industrial Facility",
+        "description": "State-of-the-art industrial complex designed for precision engineering and advanced manufacturing processes.",
+        "price": 30000000,
+        "status": "sale",
+        "area": "1,200,000 sq ft",
+        "location": "Industrial Park, Munich",
+        "facilities": [
+            "Clean Rooms",
+            "Advanced Machinery",
+            "Secure Loading Docks",
+            "On-Site Quality Control Lab"
+        ]
+    },
+    {
+        "id": 28,
+        "image": "https://i.ibb.co/HGPkVMk/Entertainment-Venue-3.jpg",
+        "title": "The Grand Pavilion",
+        "segmentName": "Entertainment Venue",
+        "description": "Iconic multi-purpose event venue hosting concerts, trade shows, and exhibitions in a stunning modern setting.",
+        "price": 10000000,
+        "status": "sale",
+        "area": "150,000 sq ft",
+        "location": "Convention District, Las Vegas",
+        "facilities": [
+            "Grand Exhibition Hall",
+            "VIP Lounges",
+            "Concession Areas",
+            "Backstage Dressing Rooms"
+        ]
+    },
+    {
+        "id": 29,
+        "image": "https://i.ibb.co/Sd0xxDx/Office-Building-6.jpg",
+        "title": "Riverfront Corporate Plaza",
+        "segmentName": "Office Building",
+        "description": "Prestigious office complex offering riverfront views, modern amenities, and direct access to public transportation.",
+        "price": 200000,
+        "status": "rent",
+        "area": "400,000 sq ft",
+        "location": "Downtown, Boston",
+        "facilities": [
+            "Rooftop Garden",
+            "Fitness Center",
+            "Concierge Services",
+            "On-Site Parking"
+        ]
+    },
+    {
+        "id": 30,
+        "image": "https://i.ibb.co/Dp9KKwJ/Retail-Space-4.jpg",
+        "title": "The Avenue",
+        "segmentName": "Retail Space",
+        "description": "Upscale retail destination featuring luxury brands, high-end dining, and exclusive amenities.",
+        "price": 18000000,
+        "status": "sale",
+        "area": "280,000 sq ft",
+        "location": "Affluent Neighborhood, Dubai",
+        "facilities": [
+            "Valet Parking",
+            "Personal Shopping Services",
+            "Exclusive Lounges",
+            "Rooftop Dining"
+        ]
+    }
+]
