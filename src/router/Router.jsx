@@ -6,6 +6,7 @@ import Register from "../Pages/register/Register";
 import Home from "../home/Home";
 import CardDetails from "../Pages/cardDetails/CardDetails";
 import PrivateRoute from "./PrivateRouter";
+import ExtraRoute from "../ExtraRoute/ExtraRoute";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
                 path: '/details/:id',
                 element: <PrivateRoute><CardDetails/></PrivateRoute>,
                 loader: () => fetch('/propertyData.json'),
+            },
+            {
+                path: '/extra',
+                element: <PrivateRoute><ExtraRoute></ExtraRoute></PrivateRoute>
             }
         ]
     }

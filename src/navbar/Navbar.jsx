@@ -8,6 +8,7 @@ const Navbar = () => {
 
     const listItem = <>
         <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/extra'>F&Q</NavLink></li>
     </>
 
     const handleSignOut = () => {
