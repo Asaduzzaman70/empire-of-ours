@@ -6,6 +6,8 @@ import { toast } from "react-toastify";
 const Navbar = () => {
     const { logOut, user } = useContext(CreateContext);
 
+    console.log(user);
+
     const listItem = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/extra'>F&Q</NavLink></li>
@@ -40,9 +42,24 @@ const Navbar = () => {
                         {listItem}
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end items-center">
+                    {/* Avater */}
+                    <div className="tooltip tooltip-left" data-tip={user?.displayName}>
+                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                            <div className="w-10 rounded-full">
+                                <img alt="Tailwind CSS Navbar component" src={user ?
+                                    user?.photoURL
+                                    : "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                                } />
+                            </div>
+                        </div>
+                    </div>
                     <div>
-                        <NavLink to='/register'><button className="btn btn-ghost">Register</button></NavLink>
+                        {
+                            user ?
+                                <NavLink to='/profile'><button className="btn">Profile</button></NavLink>
+                                : <NavLink to='/register'><button className="btn btn-ghost">Register</button></NavLink>
+                        }
                         {
                             user ?
                                 <button onClick={handleSignOut} className="btn btn-ghost">Log Out</button>
