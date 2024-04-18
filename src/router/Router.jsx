@@ -7,6 +7,7 @@ import Home from "../home/Home";
 import CardDetails from "../Pages/cardDetails/CardDetails";
 import PrivateRoute from "./PrivateRouter";
 import ExtraRoute from "../ExtraRoute/ExtraRoute";
+import UserProfile from "../UserProfile/UserProfile";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path: '/extra',
                 element: <PrivateRoute><ExtraRoute></ExtraRoute></PrivateRoute>
+            },
+            {
+                path: '/profile',
+                element: <PrivateRoute><UserProfile/></PrivateRoute>
             }
         ]
     }
