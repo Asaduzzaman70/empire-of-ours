@@ -44,6 +44,8 @@ const LogIn = () => {
         logInWithMedia(arg)
             .then(() => {
                 toast.success('Successful login');
+
+                navigate(location?.state ? location.state : '/');
             })
             .error(error => {
                 alert(error.message);
