@@ -19,7 +19,7 @@ const UserProfile = () => {
     }
 
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto my-10 p-5">
             <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className="text-center">
                     <div className="hero h-60 w-60 rounded-full border-4 border-[#8d98ff] shadow-2xl bg-cover bg-no-repeat bg-center inline-block" style={{ backgroundImage: `url(${user?.photoURL})` }}>
@@ -55,15 +55,23 @@ const UserProfile = () => {
                         </div>
                         {/* Submit */}
                         <div className="form-control mt-14 text-center">
-                            <Link onClick={() => setShowEditSaveButton(!showEditSaveButton)} className="
+                            {showEditSaveButton ?
+
+                                <button type="submit" className="
                             bg-[#8D99FF] text-white py-3 z-0 border-2 border-transparent rounded-md
                             transition duration-300
                             hover:bg-transparent lg:hover:text-[#8D99FF] hover:border-2 hover:border-[#8D99FF]
                             ">
-                                {
-                                    showEditSaveButton ? "Save" : "Edit"
-                                }
-                            </Link>
+                                    Save
+                                </button>
+                                : <button type="button" onClick={() => setShowEditSaveButton(!showEditSaveButton)} className="
+                            bg-[#8D99FF] text-white py-3 z-0 border-2 border-transparent rounded-md
+                            transition duration-300
+                            hover:bg-transparent lg:hover:text-[#8D99FF] hover:border-2 hover:border-[#8D99FF]
+                            ">
+                                    Edit
+                                </button>
+                            }
                         </div>
                     </form>
                 </div>
