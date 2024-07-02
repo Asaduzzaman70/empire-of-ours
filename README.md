@@ -10,7 +10,7 @@ Welcome to Empire Of Ours, your premier destination for a comprehensive and dyna
  
 ## 🔗 Tech Stack
 
-### **Client:** [Guru Bondhu Live Link]([https://guru-bondhu.web.app](https://assignment-9-empire-of-ours.web.app]))
+### **Client:** [Empire Of Ours Live Link](https://assignment-9-empire-of-ours.web.app)
 
 # NPM package name:
     1."ANIMATE.CSS"
