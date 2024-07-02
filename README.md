@@ -7,6 +7,10 @@ Welcome to Empire Of Ours, your premier destination for a comprehensive and dyna
 -3. Detailed Property Insights: Each property listing provides comprehensive insights, including detailed descriptions, high-resolution images, floor plans, and virtual tours, empowering users to make informed decisions about their real estate investments.
 - 4. Expert Guidance: Our platform offers expert guidance and assistance every step of the way, whether it's understanding market trends, securing financing, negotiating deals, or navigating legal processes, ensuring a seamless transaction process for buyers and sellers alike.
 - 5. Community Engagement: Beyond transactions, our website fosters a sense of community by providing valuable resources, neighborhood guides, and forums where users can share insights, experiences, and connect with like-minded individuals, creating a vibrant real estate community ecosystem.
+ 
+## 🔗 Tech Stack
+
+### **Client:** [Guru Bondhu Live Link]([https://guru-bondhu.web.app](https://assignment-9-empire-of-ours.web.app/))
 
 # NPM package name:
     1."ANIMATE.CSS"
@@ -21,9 +25,11 @@ Welcome to Empire Of Ours, your premier destination for a comprehensive and dyna
     10."SORT-BY"
     11."SWIPER"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Running Tests
 
-Currently, two official plugins are available:
+To run tests, run the following command
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+  npm run install
+```
+
